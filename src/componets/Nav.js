@@ -14,7 +14,8 @@ function Nav() {
             duration: 0.5,
         })
         gsap.from(mobLinks, {
-            x: 100,
+            x: 80,
+            opacity: 0,
             duration: 1,
             stagger: 0.1
         })
