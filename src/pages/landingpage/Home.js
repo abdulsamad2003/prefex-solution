@@ -62,7 +62,6 @@ const Home = () => {
             className="home main-font"
             style={{
                 display: "block",
-                height: "100vh",
                 textAlign: "center",
                 padding: "40vh 0",
                 width: "100%",

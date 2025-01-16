@@ -22,7 +22,6 @@ function Nav() {
     }
     const closer = () => {
         const mobList = document.querySelector('.mob-list')
-        const mobLinks = document.querySelectorAll('ul a') 
         gsap.to(mobList, {
             right: '-100%',
             duration: 0.5,
