@@ -1,0 +1,25 @@
+.home{
+    background: linear-gradient(rgba(0, 0,0,1), rgba(0, 0, 0, 0.1)), url('../../assets/home1.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow-x: hidden;
+    .heading{
+            font-size: clamp(2.5rem, 4vw , 4rem);
+            color: var(--primary-color);
+            span{
+                color: var(--secondary-color);
+                font-size: clamp(2rem, 4vw , 4rem);          
+              }
+    }
+    .home-description{
+            font-size: clamp(1rem, 4vw , 1.3rem);
+    }
+    .string{
+        width: 100%;
+        svg{
+            display: flex;
+            justify-content: center;
+            width: 100%;
+        }
+    }
+}
