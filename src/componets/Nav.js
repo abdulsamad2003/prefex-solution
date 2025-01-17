@@ -1,7 +1,7 @@
     import React, { useState} from 'react'
     import "./Nav.scss"
     import { gsap } from 'gsap'
-    import logo from '../assets/logo.png'
+    import logo from '../assets/logo.webp'
     import { Link } from 'react-router-dom'
     import { CiTextAlignRight } from "react-icons/ci";
     import { MdOutlineCancel } from "react-icons/md";
@@ -38,10 +38,10 @@
           }
         };
         return (
-        <section className='navbar'>        
-            <nav className='main-font'>
+            <nav 
+                className='main-font'>
                 <div className="logo">
-                    <img src={logo} alt="" width={150}  />
+                    <img src={logo} alt="Global edge logo" height={120} width={120}  />
                 </div>
                 <ul className='lists main-font'>
                     <Link to="/contact">Home</Link>
@@ -81,7 +81,6 @@
             </nav>
         
         
-        </section>
         )
     }
 
