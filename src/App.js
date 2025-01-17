@@ -13,6 +13,8 @@ function App() {
      <link rel="preload" as="font" href="https://fonts.gstatic.com" crossorigin="anonymous"/>
      <link rel="preload" href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet"/>
     
+     <link rel="preload" href="/assets/logo.webp" as="image" />
+     <link rel="preload" href="/assets/home.webp" as="image" />
       </Helmet>
       <Nav/>
       <Home/>
