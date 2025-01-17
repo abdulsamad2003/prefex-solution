@@ -1,4 +1,4 @@
-    import React from 'react'
+    import React, { useState} from 'react'
     import "./Nav.scss"
     import { gsap } from 'gsap'
     import logo from '../assets/logo.png'
@@ -11,36 +11,32 @@
     import { IoIosContacts } from "react-icons/io";
     function Nav() {
     
-        const mobList = document.querySelector('.mob-list')
-        const mobLinks = document.querySelectorAll('ul a') 
-        const openerIcon = document.querySelector('.opener') ;
-        const closerIcon = document.querySelector('.closer')
+        const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
-        const opener = () => {
-            openerIcon.style.display = 'none';
-            closerIcon.style.display = 'block'
+        const handleMobileMenuToggle = () => {
+          setIsMobileMenuOpen((prev) => !prev);
+      
+          const mobList = document.querySelector(".mob-list");
+          const mobLinks = mobList.querySelectorAll("ul a");
+      
+          if (!isMobileMenuOpen) {
             gsap.to(mobList, {
-                right: 0,
-                duration: 0.5,
-            })
+              right: 0,
+              duration: 0.5,
+            });
             gsap.from(mobLinks, {
-                x: 80,
-                opacity: 0,
-                duration: 1,
-                stagger: 0.1
-            })
-    
-        }
-        const closer = () => {
-            openerIcon.style.display = 'block';
-            closerIcon.style.display = 'none'
-
+              x: 150,
+              opacity: 0,
+              duration: 1,
+              stagger: 0.1,
+            });
+          } else {
             gsap.to(mobList, {
-                right: '-100%',
-                duration: 0.5,
-            })
-    
-        }
+              right: "-100%",
+              duration: 0.5,
+            });
+          }
+        };
         return (
         <section className='navbar'>        
             <nav className='main-font'>
@@ -48,34 +44,39 @@
                     <img src={logo} alt="" width={150}  />
                 </div>
                 <ul className='lists main-font'>
-                    <Link>Home</Link>
-                    <Link>Portfolio Management Service</Link>
-                    <Link>Export Advisor</Link>
-                    <Link>Contact Us</Link>
+                    <Link to="/contact">Home</Link>
+                    <Link to="/contact"> Portfolio Management Service</Link>
+                    <Link to="/contact"> Export Advisor</Link>
+                    <Link to="/contact">Contact Us</Link>
                 </ul>
                 <div className="mob-nav-opener">
-                    <span onClick={opener} >< CiTextAlignRight className="opener" style={{ fontSize: '2rem',display: 'block' }} /></span>
-                    <span onClick={closer} ><MdOutlineCancel className="closer"  style={{ fontSize: '2rem',display: 'none' }} /></span>
+                <span onClick={handleMobileMenuToggle}>
+            {isMobileMenuOpen ? (
+              <MdOutlineCancel className="closer" />
+            ) : (
+              <CiTextAlignRight className="opener" />
+            )}
+          </span>
                 </div>
                 <div className="mob-list">
                     <ul className='main-font'>
-                    <Link>
-                            <IoHomeOutline style={{fontSize: '1.5rem'}} />
+                        <Link to="/">
+                            <IoHomeOutline />
                             <li>Home</li>
-                    </Link>
-                    <Link>
-                            <GiNetworkBars style={{fontSize: "1.5rem"}} />
+                        </Link>
+                        <Link to="/portfolio">
+                            <GiNetworkBars />
                             <li>Portfolio Service</li>
-                    </Link>
-                    <Link>
-                            <GrUserExpert style={{fontSize: "1.5rem"}} />
+                        </Link>
+                        <Link to="/advisor">
+                            <GrUserExpert />
                             <li>Expert Advisor</li>
-                    </Link>
-                    <Link>
-                            <IoIosContacts style={{fontSize: "1.5rem"}} />
+                        </Link>
+                        <Link to="/contact">
+                            <IoIosContacts />
                             <li>Contact Us</li>
-                    </Link>
-                    </ul>
+                        </Link>
+                    </ul> 
             </div>
             </nav>
         
