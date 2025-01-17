@@ -18,12 +18,21 @@
         span{
             color: var(--secondary-color);
             font-size: clamp(2rem, 4vw , 4rem);  
-          }
+        }
+        @media screen and (max-width: 500px) {
+            margin-top: 40px;
+            font-weight: 800;
+        }
     }
     p{
-        font-size: clamp(12px, 3vw , 18px);
+        font-size: clamp(14px, 3vw , 18px);
         color: var(--secondary-color);
         padding: 3vh 0;
+        @media screen and (max-width: 500px) {
+            width: 90%;
+            margin: 0 auto;
+            line-height: 18px;
+        }
     }
     .hero-btn{
         display: inline-block;
