@@ -22,18 +22,18 @@
           if (!isMobileMenuOpen) {
             gsap.to(mobList, {
               right: 0,
-              duration: 0.5,
+              duration: 0.2,
             });
             gsap.from(mobLinks, {
-              x: 150,
+              x: 200,
               opacity: 0,
-              duration: 1,
-              stagger: 0.1,
+              duration: 1.2,
+              stagger: 0.3,
             });
           } else {
             gsap.to(mobList, {
               right: "-100%",
-              duration: 0.5,
+              duration: 0.3,
             });
           }
         };
