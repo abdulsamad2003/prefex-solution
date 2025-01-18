@@ -1,0 +1,26 @@
+.investment-risk{
+    display: flex;  
+    height: calc(100% + 10vh);
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    background: url(../assets/benefits-1.png) no-repeat right center/contain, #CADCFC;;
+    padding: 5% 10%;
+    color: var(--primary-color);
+    @media screen and (max-width: 800px) {
+        color: white;
+        background: linear-gradient(rgba(0,0,0,.6), rgba(0,0,0,.6)), url(../assets/benefits-1.png) no-repeat center center/contain, #CADCFC;
+    }
+    .heading{
+        font-size: clamp(12px, 4vw, 20px);
+    }
+    p {
+         width: 60%;
+         margin-top: 10px;
+         font-size: clamp(7px, 4vw, 16px);
+        @media screen and (max-width: 800px) {
+            width: 95%;
+        }
+    }
+        
+}

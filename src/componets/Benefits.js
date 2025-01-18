@@ -1,6 +1,7 @@
 import React from "react";
 import "./Benefits.scss";
-import { MdAttachMoney } from "react-icons/md";import benefitTrader from "../assets/benefits-1.png";
+import { MdAttachMoney } from "react-icons/md";
+import benefitTrader from "../assets/benefits-1.png";
 function Benefits() {
   return (
     <section id="why-us" className="why-us">
