@@ -1,0 +1,54 @@
+
+.loading-container {
+    display: flex;
+    position: fixed;
+    justify-content: center;
+    align-items: center;
+    block-size: 100vh;
+    inline-size: 100%;
+    background-color: var(--primary-color);
+    overflow: hidden;
+    z-index: 1111;
+}
+.text-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-inline-size: 18rem;
+    inline-size: 40rem;
+    max-inline-size: 40rem;
+    overflow: hidden;
+}
+
+.text-stroke {
+    font-size: clamp(70px, 4vw , 92px);
+
+    font-family: "Raleway", sans-serif;
+    letter-spacing: 4px;
+    fill: transparent;
+    stroke: white;
+    stroke-width: 1;
+    stroke-dasharray: 100%;
+    stroke-dashoffset: 100%;
+    animation: textStrokeAnim 3000ms linear both;
+    animation-iteration-count: 1;
+}
+
+
+@keyframes textStrokeAnim {
+    0% {
+        stroke-dasharray: 100%;
+        stroke-dashoffset: 100%;
+        fill: transparent;
+    }
+    95% {
+        stroke-dasharray: 0%;
+        stroke-dashoffset: 90%;
+        fill: #0000;
+    }
+    100% {
+        stroke-dasharray: 0%;
+        stroke-dashoffset: 0%;
+        fill: white;
+    }
+}
