@@ -5,14 +5,18 @@ import Home from './pages/landingpage/Home';
 import Footer from './componets/Footer';
 import LoadingAnim from './componets/LoadingAnim';
 import { useState,useEffect } from 'react';
-
 function App() {
   const [loading, setLoading] = useState(true);
-  useEffect(()=> {
-    setTimeout(()=>{
-      setLoading(false)
-    }, 3500)
-  }, [])
+
+  useEffect(() => {
+    // Wait for 4 seconds and then start the animation to remove the loading animation
+    setTimeout(() => {
+      setLoading(false);
+      // Animate the loading animation to move off-screen
+   
+    }, 4000); // 4 seconds loading time
+  }, []);
+
   return (
     <>
       {/*for preloading fonts */}
