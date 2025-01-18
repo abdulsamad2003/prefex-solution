@@ -1,0 +1,94 @@
+.why-us{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background: var(--primary-color);
+    display: flex;
+    align-items: center;
+    column-gap: 2vw;
+    padding: 10vh 5vw;
+    text-align: left;
+    @media screen and (max-width: 700px) {
+        flex-direction: column;
+        height: 100%;
+    }
+    .left-img{
+        width: 45%;
+    }
+    .why-us-content{
+        width: 50%;
+        @media screen and (max-width: 700px) {
+            width: 100%;
+            align-items: center;
+            column-gap: 2vw;
+        }
+        .heading{
+            text-align: left;
+            color: var(--secondary-color);
+            span {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                padding: 4vh 0 0 0;
+                column-gap: 1vw;
+                justify-content: flex-start;
+                h5{
+                    color: #fff;
+                    font-size: clamp(20px, 4vw, 24px);
+                    font-weight: 600;
+                }
+            }
+            h1{
+                font-size: 22px;
+            }
+            p{
+                font-size: clamp(16px, 4vw, 16px);
+                font-weight: 400;
+                color: #fff;
+                @media screen and (max-width: 700px) {
+                    font-size: 14px;
+                }
+            
+            }
+        }
+    }
+    .choose-us-card{
+        display: flex;
+        flex-direction: column;
+        row-gap: 2vh;
+        margin: 5vh 0;
+        
+        .card{
+            display: flex;
+            align-items: center;
+            width: 100%;
+            padding: 4vh 1.5vw;
+            gap: 1vw;
+            background: rgba(202, 220, 252, .2);
+            border: 1px solid rgba(202, 220, 252, 0.2);
+            border-radius: 14px;
+            transition: .3s;
+            box-shadow: 3px 3px 0px 0px rgba(202, 220, 252, .5);
+            &:hover{
+                background: rgba(202, 220, 252, .2);
+                box-shadow: 4px 4px 0px 1px rgba(202, 220, 252, .5);
+            }
+            .card-content{
+                padding: 0 4vw;
+                color: var(--secondary-color);
+                .h-one{
+                    margin-left: -1.5vw;
+                    padding: 0 0 1vh 0;  
+                    font-size: clamp(18px, 4vw, 20px); 
+                }
+                .para{
+                    font-size: clamp(12px, 4vw, 15px); 
+                }   
+            }
+        }
+
+        
+    }
+}
+
+

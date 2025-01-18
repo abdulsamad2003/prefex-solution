@@ -28,10 +28,11 @@ function App() {
       {loading ? (
         <LoadingAnim></LoadingAnim>
       ) : ("")
-    }
+      }
+      
      <Nav/>
       <Home/>
-        <Footer/>
+      <Footer/>
     </>
 
   );

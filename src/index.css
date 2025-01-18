@@ -9,7 +9,9 @@
 
   --secondary-color: #CADCFC;
 }
-
+body{
+  transition: .3s ease;
+}
 .main-font {
   font-family: "Raleway", serif;
   font-optical-sizing: auto;

@@ -1,10 +1,11 @@
 import React from "react";
 import "./Home.scss";
 import { Link } from "react-router-dom";
+import Benefits from "../../componets/Benefits";
 
 const Home = () => {
   return (
-    <section className="home main-font">
+    <>    <section className="home main-font">
       <div className="text-box">
         <h1 className="main-font">
           GLOBAL <span>edge</span>
@@ -21,6 +22,9 @@ const Home = () => {
         </Link>
       </div>
     </section>
+    <Benefits/>
+    </>
+
   );
 };
 
