@@ -24,13 +24,16 @@
             font-weight: 800;
         }
     }
-    p{
+    .para{
+        margin: 2vh 0;
+        p{
         font-size: clamp(14px, 3vw , 18px);
-        color: #fff;
-        @media screen and (max-width: 500px) {
-            width: 90%;
-            margin: 0 auto;
-            line-height: 18px;
+            color: #fff;
+            @media screen and (max-width: 500px) {
+                width: 90%;
+                margin: 0 auto;
+                line-height: 18px;
+            }
         }
     }
     .hero-btn{
@@ -45,7 +48,6 @@
         cursor: pointer;
         position: relative;
         background: transparent;
-        margin-top: 5vh;
         &:hover{
             background: var(--primary-color);
             letter-spacing: 5px;
