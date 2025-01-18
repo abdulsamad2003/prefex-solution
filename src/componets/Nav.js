@@ -41,7 +41,8 @@ function Nav() {
   return (
     <nav className='main-font'>
       <div className="logo">
-        <img src={logo} alt="Global edge logo" height={120} width={120} />
+        <img src={logo} alt="Global edge logo" height={"90vh"} width={"90vw"}
+        loading="lazy" />
       </div>
       {/* Desktop Navigation */}
       <ul className='lists main-font'>
