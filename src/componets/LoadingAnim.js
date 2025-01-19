@@ -8,8 +8,8 @@ function LoadingAnim() {
   useEffect(() =>{
     setTimeout(()=>{
         gsap.to(".loading-container", {
-            y: "-100%",  // Move it off the screen vertically
-            duration: 1, // Duration of the animation
+            y: "-100%",
+            duration: 1,
             ease: "power2.out",
           });
     }, 3000)

@@ -27,6 +27,7 @@
 .text-stroke {
     font-size: clamp(70px, 4vw , 92px);
     font-family: "Raleway", sans-serif;
+    font-display: swap;
     letter-spacing: 4px;
     fill: transparent;
     stroke: white;

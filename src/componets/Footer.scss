@@ -62,7 +62,6 @@
 .footer-content ul li a{
     text-decoration: none;
     color: #FFFFFF;
-    font-family: var(--inter-font);
     font-size: clamp(8px, 1.5vw, 16px);
     @media screen and (max-width: 1000px) {
         font-size: clamp(14px, 1.5vw,20px);
