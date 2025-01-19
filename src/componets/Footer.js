@@ -7,13 +7,12 @@ const Footer = () => {
 
 
   return (
-    <>
         <footer className="footer">
         <main className="footer-content left">
             <div className="main-font content">
             <h1>GLOBAL Edge</h1>
                 <p className="para-font">
-                        Everything that will help you grow your business and career. We cover a wide range of tech business topics, including e-commerce, social media, and mobile commerce
+                    Everything that will help you grow your business and career. We cover a wide range of tech business topics, including e-commerce, social media, and mobile commerce
                 </p>
             </div>
         </main>
@@ -47,7 +46,7 @@ const Footer = () => {
                 <ul>
                 <li>
                     <span className="main-font">Email</span>
-                    <Link className="para-font" to="mailto:sales@himachaltourismguide.in" target="_blank">sales@himachaltourismguide.in</Link>
+                    <Link className="para-font" to="mailto:" target="_blank">GlobalEdge@gmail.com</Link>
                 </li>
                 <li>
                     <span className="main-font">Phone no:</span>
@@ -55,8 +54,8 @@ const Footer = () => {
                 </li>
                 <li className="hover">
                     <span className="main-font">Address</span>
-                    <Link className="para-font" to="tel:+91 7836098136">
-                        Near stop n shop, Kelti, Himachal Pradesh Pin-code:171003
+                    <Link className="para-font" to="/">
+                        Mumbai India
                     </Link>
                 </li>
                 </ul>
@@ -64,7 +63,6 @@ const Footer = () => {
             </div>
         </main>
         </footer>
-    </>
  
   );
 };
