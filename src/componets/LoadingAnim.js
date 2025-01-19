@@ -18,9 +18,9 @@ function LoadingAnim() {
   return (
     <section className="loading-container">
       <main className="text-container">
-        <svg className="main-font text-stroke" viewBox="-20 0 600 100" width="100%" height="100%">
-          <text className="text" x="50" y="75" ref={textAnimationRef}>
-                Global Edge
+        <svg className="main-font text-stroke" viewBox="0 0 600 100" preserveAspectRatio="xMidYMid meet" width="100%" height="100%">
+          <text className="text" x="50%" y="50%" textAnchor="middle" ref={textAnimationRef}>
+            Global Edge
           </text>
         </svg>
       </main>
