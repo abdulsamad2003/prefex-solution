@@ -21,8 +21,8 @@ const Footer = () => {
         <main className="footer-content middle">
             <div className="main-font content">
             <h1>Links</h1>
-            <div className="para-font links">
-                <ul>
+            <div className="links">
+                <ul className="para-font">
                 <li>
                     <Link to="/">Home</Link>
                 </li>
@@ -46,16 +46,16 @@ const Footer = () => {
             <div className="links">
                 <ul>
                 <li>
-                    <span>Email</span>
-                    <Link to="mailto:sales@himachaltourismguide.in" target="_blank">sales@himachaltourismguide.in</Link>
+                    <span className="main-font">Email</span>
+                    <Link className="para-font" to="mailto:sales@himachaltourismguide.in" target="_blank">sales@himachaltourismguide.in</Link>
                 </li>
                 <li>
-                    <span>Phone no:</span>
-                    <Link to="tel:+91 7836098136">+91 7836098136</Link>
+                    <span className="main-font">Phone no:</span>
+                    <Link className="para-font" to="tel:+91 7836098136">+91 7836098136</Link>
                 </li>
                 <li className="hover">
-                    <span>Address</span>
-                    <Link href="tel:+91 7836098136">
+                    <span className="main-font">Address</span>
+                    <Link className="para-font" to="tel:+91 7836098136">
                         Near stop n shop, Kelti, Himachal Pradesh Pin-code:171003
                     </Link>
                 </li>

@@ -1,7 +1,7 @@
 .footer{
     background: 
     linear-gradient(rgba(4,9,10,.5),rgba(4,9,10,.8)),
-    url('../assets/footer-bg-1.jpg');
+    url('../assets/footer-bg-1.webp');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -35,24 +35,11 @@
     white-space: nowrap;
 }
 .footer .left .content p{
-    font-size: clamp(8px, 2vw, 12px);
+    font-size: clamp(12px, 2vw, 14px);
     width: 100%;
     line-height: 18px;
     letter-spacing: 1px;
     margin-top: 1vh;
-}
-.footer .left .social-icon{
-    display: flex;
-    align-items: center;
-    column-gap: .8vw;
-}
-.footer .left .social-icon .icon{
-    display: grid;
-    place-items: center;
-    height:  30px;
-    width: 30px;
-    background: var(--blue-color);
-    border-radius: 50%;
 }
 
 .footer-content .content .links{
@@ -66,16 +53,16 @@
 .footer-content ul li {
     list-style: none;
     margin: 2vh 0;
+    
 }
+
 .links li:hover a{
-    color: var(--blue-color);
     font-weight: 700;
   }
 .footer-content ul li a{
     text-decoration: none;
     color: #FFFFFF;
     font-family: var(--inter-font);
-    font-weight: 300;
     font-size: clamp(8px, 1.5vw, 16px);
     @media screen and (max-width: 1000px) {
         font-size: clamp(14px, 1.5vw,20px);
@@ -86,11 +73,8 @@
     flex-direction: column;
 }
 .footer .right .content .links span{
-    font-family: var(--inter-font);
-    font-weight: 400;
-    color: #e1dddd;
+    font-weight: 500;
 }
 .footer .right .content .links a{
-    font-family: var(--thick-font);
     font-weight: 600;
 }
