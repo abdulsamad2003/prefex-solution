@@ -48,7 +48,7 @@ function Nav() {
       <ul className='lists main-font'>
         <li><Link to="/">Home</Link></li>
         <li><Link to="/portfolio-service">Portfolio Management Service</Link></li>
-        <li><Link to="/export-advice">Export Advisor</Link></li>
+        <li><Link to="/expert-advisor">Expert Advisor</Link></li>
         <li><Link to="/contact-us">Contact Us</Link></li>
       </ul>
 
@@ -79,7 +79,7 @@ function Nav() {
             </Link>
           </li>
           <li>
-            <Link onClick={handleMobileMenuToggle} to="/expert-advice">
+            <Link onClick={handleMobileMenuToggle} to="/expert-advisor">
               <GrUserExpert />
               Expert Advisor
             </Link>

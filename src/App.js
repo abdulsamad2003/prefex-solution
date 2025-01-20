@@ -4,9 +4,12 @@ import Nav from './componets/Nav';
 import Home from './pages/landingpage/Home';
 import Footer from './componets/Footer';
 import LoadingAnim from './componets/LoadingAnim';
-import { useState,useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import { Route, Routes } from 'react-router-dom';
 import PortfoiloService from './pages/landingpage/PortfoiloService';
+import ScrollToTop from './scroll-to-top/ScrollToTop';
+import ExpertAdvisor from './pages/landingpage/ExpertAdvisor';
+
 function App() {
   const [loading, setLoading] = useState(true);
 
@@ -15,31 +18,31 @@ function App() {
     setTimeout(() => {
       setLoading(false);
       // Animate the loading animation to move off-screen
-   
     }, 4000); // 4 seconds loading time
   }, []);
 
   return (
     <>
-      {/*for preloading fonts */}
+      {/* Preloading fonts */}
       <Helmet>
         <link rel="preload" as="font" href="https://fonts.googleapis.com" crossorigin="anonymous" />
         <link rel="preload" as="font" href="https://fonts.gstatic.com" crossorigin="anonymous" />
         <link rel="preload stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" />
       </Helmet>
       {loading ? (
-        <LoadingAnim></LoadingAnim>
-      ) : ("")
-      }
-      
-     <Nav/>
-     <Routes>
-        <Route path='/' element={<Home/>}></Route>
-        <Route path='/portfolio-service' element={<PortfoiloService/>}></Route>
-     </Routes>
-      <Footer/>
+        <LoadingAnim />
+      ) : (
+        ''
+      )}
+      <ScrollToTop />
+      <Nav />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/portfolio-service" element={<PortfoiloService />} />
+        <Route path="/expert-advisor" element={<ExpertAdvisor />} />
+      </Routes>
+      <Footer />
     </>
-
   );
 }
 
