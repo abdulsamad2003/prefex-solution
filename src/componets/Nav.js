@@ -46,8 +46,8 @@ function Nav() {
       </div>
       {/* Desktop Navigation */}
       <ul className='lists main-font'>
-        <li><Link to="/contact">Home</Link></li>
-        <li><Link to="/contact">Portfolio Management Service</Link></li>
+        <li><Link to="/">Home</Link></li>
+        <li><Link to="/portfolio-service">Portfolio Management Service</Link></li>
         <li><Link to="/contact">Export Advisor</Link></li>
         <li><Link to="/contact">Contact Us</Link></li>
       </ul>

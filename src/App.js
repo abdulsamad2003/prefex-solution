@@ -5,6 +5,8 @@ import Home from './pages/landingpage/Home';
 import Footer from './componets/Footer';
 import LoadingAnim from './componets/LoadingAnim';
 import { useState,useEffect } from 'react';
+import { Route, Routes } from 'react-router-dom';
+import PortfoiloService from './pages/landingpage/PortfoiloService';
 function App() {
   const [loading, setLoading] = useState(true);
 
@@ -31,7 +33,10 @@ function App() {
       }
       
      <Nav/>
-      <Home/>
+     <Routes>
+        <Route path='/' element={<Home/>}></Route>
+        <Route path='/portfolio-service' element={<PortfoiloService/>}></Route>
+     </Routes>
       <Footer/>
     </>
 
