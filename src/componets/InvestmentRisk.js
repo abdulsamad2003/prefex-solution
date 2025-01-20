@@ -1,9 +1,12 @@
 import React from "react";
 import "./InvestmentRisk.scss";
+import bullRun from "../assets/benefits-1.webp"
 function InvestmentRisk() {
   return (
     <section className="investment-risk">
-        <h1 className="heading main-font">General Investment Risk</h1>
+        <h1 className="heading main-font">General Investment Risk
+          <img src={bullRun} width={90} height={110} alt="" />
+        </h1>
         <p className="para para-font">
           All investments come with the risk of losing money. Investing involves
           substantial risks, including complete possible loss of principal plus
