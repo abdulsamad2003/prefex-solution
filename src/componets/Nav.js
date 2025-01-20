@@ -48,8 +48,8 @@ function Nav() {
       <ul className='lists main-font'>
         <li><Link to="/">Home</Link></li>
         <li><Link to="/portfolio-service">Portfolio Management Service</Link></li>
-        <li><Link to="/contact">Export Advisor</Link></li>
-        <li><Link to="/contact">Contact Us</Link></li>
+        <li><Link to="/export-advice">Export Advisor</Link></li>
+        <li><Link to="/contact-us">Contact Us</Link></li>
       </ul>
 
       {/* Mobile Navigation Toggle */}
@@ -67,25 +67,25 @@ function Nav() {
       <div className="mob-list">
         <ul className='main-font'>
           <li>
-            <Link to="/">
+            <Link onClick={handleMobileMenuToggle} to="/">
               <IoHomeOutline />
               Home
             </Link>
           </li>
           <li>
-            <Link to="/portfolio">
+            <Link onClick={handleMobileMenuToggle} to="/portfolio-service">
               <GiNetworkBars />
               Portfolio Service
             </Link>
           </li>
           <li>
-            <Link to="/advisor">
+            <Link onClick={handleMobileMenuToggle} to="/expert-advice">
               <GrUserExpert />
               Expert Advisor
             </Link>
           </li>
           <li>
-            <Link to="/contact">
+            <Link onClick={handleMobileMenuToggle} to="/contact-us">
               <IoIosContacts />
               Contact Us
             </Link>
