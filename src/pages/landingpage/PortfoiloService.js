@@ -1,6 +1,6 @@
 import React from "react";
 import "./PortfolioService.scss";
-import portfolioBusiness from "../../assets/portfolio-business.jpg"
+import portfolioBusiness from "../../assets/financial-advisor-1.webp"
 function PortfoiloService() {
   return (
     <section className="portfolio-service">
