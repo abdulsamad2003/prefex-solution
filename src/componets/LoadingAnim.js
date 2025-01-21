@@ -13,7 +13,7 @@ function LoadingAnim() {
             ease: "power2.out",
           });
     }, 3000)
-  })
+  },[])
 
   return (
     <section className="loading-container">

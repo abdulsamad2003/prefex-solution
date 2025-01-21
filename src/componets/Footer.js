@@ -10,7 +10,7 @@ const Footer = () => {
         <footer className="footer">
         <main className="footer-content left">
             <div className="main-font content">
-            <h1>GLOBAL Edge</h1>
+            <h1>Prefex Solution</h1>
                 <p className="para-font">
                     Everything that will help you grow your business and career. We cover a wide range of tech business topics, including e-commerce, social media, and mobile commerce
                 </p>
@@ -46,7 +46,7 @@ const Footer = () => {
                 <ul>
                 <li>
                     <span className="main-font">Email</span>
-                    <Link className="para-font" to="mailto:" target="_blank">GlobalEdge@gmail.com</Link>
+                    <Link className="para-font" to="mailto:" target="_blank">PrefexSolution@gmail.com</Link>
                 </li>
                 <li>
                     <span className="main-font">Phone no:</span>

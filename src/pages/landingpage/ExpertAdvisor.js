@@ -7,10 +7,10 @@ const ExpertAdvisor = () => {
     <>
         <section className="expert-advisor">
           <div className="text-box">
-            <h1 className="main-font">Expert Advisors at Global Edge</h1>
+            <h1 className="main-font">Expert Advisors at Prefex Solution</h1>
             <div className="para">
               <p className="para-font">
-                At Global Edge, our team of experienced traders and financial
+                At Prefex Solution, our team of experienced traders and financial
                 advisors offers expert guidance in navigating the complexities of
                 international financial markets.
               </p>

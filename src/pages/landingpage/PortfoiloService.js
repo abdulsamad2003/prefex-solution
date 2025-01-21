@@ -8,7 +8,7 @@ function PortfoiloService() {
         <h1>Portfolio Management Service (PMS)</h1>
         <p>
           Service includes all the management of Global Edge exposure & risk to
-          it. It also includes Global Egde risk advisory.
+          it. It also includes Prefex Solution risk advisory.
         </p>
       </div>
       <div className="content">
