@@ -14,21 +14,18 @@
             text-align: center;
         }
         h1{
+            font-weight: 800;
             margin-top: 20vh;
-            font-size: clamp(2rem, 4vw , 4rem);
+            font-size: clamp(1.5rem, 4vw , 4rem);
             color: var(--secondary-color);
-            span{
-                font-size: clamp(2rem, 4vw , 4rem);  
-            }
             @media screen and (max-width: 500px) {
                 margin-top: 6vh;
-                font-weight: 800;
             }
         }
         .para{
             margin: 2vh 0;
             p{
-            font-size: clamp(14px, 3vw , 18px);
+            font-size: clamp(12px, 3vw , 18px);
                 color: #fff;
                 @media screen and (max-width: 500px) {
                     width: 90%;
