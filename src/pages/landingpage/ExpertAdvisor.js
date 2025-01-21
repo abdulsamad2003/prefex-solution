@@ -1,6 +1,7 @@
 import React from "react";
 import "./ExpertAdvisor.scss";
 import ColinQuote from "../../componets/ColinQuote";
+import BenefitOfAdvisor from "../../componets/BenefitOfAdvisor";
 const ExpertAdvisor = () => {
   return (
     <>
@@ -22,6 +23,7 @@ const ExpertAdvisor = () => {
           </div>
         </section>
         <ColinQuote/>
+        <BenefitOfAdvisor/>
       </>
   );
 };
