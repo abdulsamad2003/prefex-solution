@@ -1,9 +1,9 @@
 import React from 'react'
 import "./BenefitOfAdvisor.scss"
-import financialAdivisor1 from "../assets/financial-advisor-1.jpg"
-import financialAdivisor2 from "../assets/financial-advisor-2.jpg"
-import financialAdivisor3 from "../assets/financial-advisor-3.jpg"
-import financialAdivisor4 from "../assets/financial-advisor-4.jpg"
+import financialAdivisor1 from "../assets/financial-advisor-1.webp"
+import financialAdivisor2 from "../assets/financial-advisor-2.webp"
+import financialAdivisor3 from "../assets/financial-advisor-3.webp"
+import financialAdivisor4 from "../assets/financial-advisor-4.webp"
 
 const BenefitOfAdvisor = () => {
   return (
