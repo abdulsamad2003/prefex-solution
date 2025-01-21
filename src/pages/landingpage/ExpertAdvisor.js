@@ -1,9 +1,10 @@
 import React from "react";
 import "./ExpertAdvisor.scss";
+import ColinQuote from "../../componets/ColinQuote";
 const ExpertAdvisor = () => {
   return (
-      <section className="main-font expert-advisor">
-        <main className="expert-advisor-content">
+    <>
+        <section className="expert-advisor">
           <div className="text-box">
             <h1 className="main-font">Expert Advisors at Global Edge</h1>
             <div className="para">
@@ -19,17 +20,9 @@ const ExpertAdvisor = () => {
               </p>
             </div>
           </div>
-        </main>
-     
-        <main className="colin-quote">
-        <h1 className="main-font">
-          There are no secrets to success. It is the result of preparation, hard
-          work, and learning from failure.
-        </h1>
-        <h2 className="para-font">- Colin Powell -</h2>
-      </main>
-      </section>
-
+        </section>
+        <ColinQuote/>
+      </>
   );
 };
 

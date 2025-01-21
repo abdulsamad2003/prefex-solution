@@ -1,12 +1,11 @@
 .expert-advisor{
-    .expert-advisor-content{
-        background: linear-gradient(rgba(4,9,10,.8),rgba(4,9,10,.8)), url('../../assets/business-person.jpg');
+        width: 100%;
+        position: relative;
+        background: linear-gradient(rgba(4,9,10,.8),rgba(4,9,10,.8));
         background-size: cover;
         background-position: 50% 50%;
         background-repeat: no-repeat;
-        overflow-x: hidden;
         height: 100vh;
-        width: 100%;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -57,37 +56,7 @@
                 transition: 1s ease;
             }
         }
-    }
-    $pp-purple: var(--primary-color);
-    $pp-blue: #1d0f7a;
-    $pp-ltblue: #0e19e2ce;
-
-    .colin-quote{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    gap: 2vh;
-    height: 40vh;
-    width: 100%;
-    padding: 0 5vw;
-    color: var(--secondary-color);
-    background-image: linear-gradient(to right, $pp-blue,$pp-ltblue,$pp-purple,$pp-purple, $pp-blue);
-    background-size: 600%;
-    background-position: 0 0;
-    box-shadow: inset 0 0 5em rgba(0,0,0,.5);
-    animation-duration: 5s;
-    animation-iteration-count: infinite;
-    animation-name: gradients;
-
-        h1{
-            text-align: center;
-            font-size: clamp(20px,4vw, 30px);
-        }
-        h2{
-            font-size: clamp(20px,4vw, 26px);
-        }
-    }
+  
 }
 
 

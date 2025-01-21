@@ -20,7 +20,7 @@ const Home = () => {
                   International Financial Market.
               </p>
           </div>
-          <Link to="/contact" className="hero-btn" aria-label="Contact Us">
+          <Link to="/contact-us" className="hero-btn" aria-label="Contact Us">
             Contact Us
           </Link>
         </div>
