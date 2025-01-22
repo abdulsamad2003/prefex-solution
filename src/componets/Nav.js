@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import "./Nav.scss";
 import { gsap } from 'gsap';
-import logo from '../assets/logo.png';
+import logo from '../assets/logo.webp';
 import { Link } from 'react-router-dom';
 import { CiTextAlignRight } from "react-icons/ci";
 import { MdOutlineCancel } from "react-icons/md";
