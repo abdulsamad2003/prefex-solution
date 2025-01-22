@@ -46,7 +46,8 @@ const Footer = () => {
                 <ul>
                 <li>
                     <span className="main-font">Email</span>
-                    <Link className="para-font" to="mailto:" target="_blank">PrefexSolution@gmail.com</Link>
+                    <Link className="para-font" to="mailto:" target="_blank">Support@prefexsolution.com</Link>
+                    <Link className="para-font" to="mailto:" target="_blank">Admin@prefexsolution.com</Link>
                 </li>
                 <li>
                     <span className="main-font">Phone no:</span>

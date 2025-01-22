@@ -20,31 +20,31 @@ const EnquiryForm = () => {
         }}
       >
         <div className="content">
-          <p className='para-font'>
+          <p className='content-small-heading para-font'>
             Interested in Prefex Solution? <br /> We are just a call away! <br />
             Please reach out to us at:
           </p>
           <span className="email">
             <h1 className='main-font'>EMAIL</h1>
-            <li className='para-font'>
-              <Link to="">
+            <span className='para-font'>
+              <Link  to="mailto:" target="_blank">
                     Support@prefexsolution.com
               </Link>
-            </li>
+            </span>
           </span>
           <span className="phone-whatsapp">
             <h1 className='main-font'>PHONE/WHATSAPP</h1>
-            <li className='para-font'>
+            <span className='para-font'>
               <Link>
                 +91 9673500999
               </Link>
-            </li>
+            </span>
 
-            <li className='para-font'>
-              <Link>
+            <span className='para-font'>
+              <Link to="tel:+91 7836098136">
                 +91 9673500999
               </Link>
-            </li>
+            </span>
           </span>
         </div>
         <div

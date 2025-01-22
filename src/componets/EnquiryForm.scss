@@ -6,22 +6,24 @@
     .content {
         width: 50%;
         padding: 5% 0 0 10%;
-        .para-font{
+        .content-small-heading{
             width: 100%;
         }
         span{
+            display: flex;
+            flex-direction: column;
             h1 {
                 font-size: clamp(.98rem, 2vw, 1.2rem);
                 margin: 10% 0 2% 0;
                 color: var(--primary-color);
             }
-            li{
+            span{
                 font-size: clamp(1rem, 2vw, 1.2rem);
                 cursor: pointer;
                 text-decoration: underline;
                 white-space: nowrap;
                 a{
-                    color: #344054;
+                    color: #000;
                     font-weight: 700;
                 }
             }
