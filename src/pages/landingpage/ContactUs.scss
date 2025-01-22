@@ -1,0 +1,40 @@
+.contact-us{
+    width: 100%;
+    position: relative;
+    background: linear-gradient(rgba(4,9,10,.4),rgba(4,9,10,.8)), url(../../assets/form-bg.jpg);
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    height: 100vh;
+    height: 100dvh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .text-box{
+        width: 90%;
+        text-align: center;
+    }
+    h1{
+        font-weight: 800;
+        margin-top: 20vh;
+        font-size: clamp(1.5rem, 4vw , 4rem);
+        color: var(--secondary-color);
+        @media screen and (max-width: 500px) {
+            margin-top: 6vh;
+        }
+    }
+    .para{
+        margin: 2vh 0;
+        p{
+        font-size: clamp(12px, 3vw , 18px);
+            color: #fff;
+            @media screen and (max-width: 500px) {
+                width: 90%;
+                margin: 0 auto;
+                line-height: 18px;
+            }
+        }
+    }
+}
+
+

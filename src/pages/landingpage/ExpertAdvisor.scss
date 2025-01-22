@@ -6,6 +6,7 @@
         background-position: 50% 50%;
         background-repeat: no-repeat;
         height: 100vh;
+        height: 100dvh;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -34,26 +35,6 @@
                 }
             }
         }
-        .hero-btn{
-            display: inline-block;
-            text-transform: uppercase;
-            letter-spacing: 3px;
-            color: #fff;
-            text-decoration: none;
-            border: 2px solid var(--secondary-color);
-            font-size: 13px;
-            padding: 12px 34px;
-            cursor: pointer;
-            position: relative;
-            background: transparent;
-            &:hover{
-                background: var(--primary-color);
-                letter-spacing: 5px;
-                border: 2px solid var(--primary-color);
-                transition: 1s ease;
-            }
-        }
-  
 }
 
 

@@ -9,6 +9,7 @@ import { Route, Routes } from 'react-router-dom';
 import PortfoiloService from './pages/landingpage/PortfoiloService';
 import ScrollToTop from './scroll-to-top/ScrollToTop';
 import ExpertAdvisor from './pages/landingpage/ExpertAdvisor';
+import ContactUs from './pages/landingpage/ContactUs';
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -40,6 +41,8 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/portfolio-service" element={<PortfoiloService />} />
         <Route path="/expert-advisor" element={<ExpertAdvisor />} />
+        <Route path="/contact-us" element={<ContactUs />} />
+
       </Routes>
       <Footer />
     </>
