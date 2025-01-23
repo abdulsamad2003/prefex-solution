@@ -1,8 +1,9 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
-  "start_url": ".",
+  "short_name": "Prefex",
+  "name": "Prefex Solution - Professional Traders & Financial Advisors",
+  "start_url": "/",
   "display": "standalone",
   "theme_color": "#000000",
-  "background_color": "#ffffff"
+  "background_color": "#ffffff",
+  "description": "Prefex Solution is a group of professional traders and financial advisors, well-versed with the alpha and omega of various assets in the International Financial Market."
 }
