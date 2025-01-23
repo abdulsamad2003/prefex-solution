@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import "./Nav.scss";
 import { gsap } from 'gsap';
-import logo from '../assets/logo.webp';
+import prefexLogo from '../assets/prefexLogo.webp';
 import { Link } from 'react-router-dom';
 import { CiTextAlignRight } from "react-icons/ci";
 import { MdOutlineCancel } from "react-icons/md";
@@ -41,7 +41,7 @@ function Nav() {
   return (
     <nav className='main-font'>
       <div className="logo">
-        <img src={logo} alt="Global edge logo" height={70} width={160}
+        <img src={prefexLogo} alt="prefex solution logo" height={70} width={160}
         loading="lazy" />
       </div>
       {/* Desktop Navigation */}

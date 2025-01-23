@@ -1,11 +1,11 @@
 import React from "react";
 import "./InvestmentRisk.scss";
-import bullRun from "../assets/benefits-1.webp"
+import PrefexTrader from "../assets/prefexTrader.webp"
 function InvestmentRisk() {
   return (
     <section className="investment-risk">
         <h1 className="heading main-font">General Investment Risk
-          <img src={bullRun} width={90} height={110} alt="" />
+          <img src={PrefexTrader} width={90} height={110} alt="prefex solution bullrun profit sign" />
         </h1>
         <p className="para para-font">
           All investments come with the risk of losing money. Investing involves

@@ -1,12 +1,12 @@
 import React from "react";
 import "./Benefits.scss";
 import { MdAttachMoney } from "react-icons/md";
-import benefitTrader from "../assets/benefits-1.webp";
+import prefexTrader from "../assets/prefexTrader.webp";
 function Benefits() {
   return (
     <section id="why-us" className="why-us">
       <div className="left-img">
-        <img src={benefitTrader} width="100%" height="100%" alt="" />
+        <img src={prefexTrader} width="100%" height="100%" alt="prefex solution prefex advisor" />
       </div>
 
       <div className="why-us-content">
@@ -16,7 +16,7 @@ function Benefits() {
             <h1 className="main-font">Benefits For You:</h1>
           </span>
           <p className="para-font">
-            Enjoy different experiences in every place you visit{" "}
+            Enjoy different experiences in every place you visit.
           </p>
           <p className="para-font">
             and discover new and affordable adventures of course.

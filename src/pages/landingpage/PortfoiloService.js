@@ -1,6 +1,6 @@
 import React from "react";
 import "./PortfolioService.scss";
-import portfolioBusiness from "../../assets/financial-advisor-1.webp"
+import prefexAdvisor from "../../assets/prefex-advisor-1.webp"
 function PortfoiloService() {
   return (
     <section className="portfolio-service">
@@ -27,7 +27,7 @@ function PortfoiloService() {
             </p>
         </div>
         <div className="portfolio-img">
-            <img src={portfolioBusiness} alt="" aria-label="" width={400} height={300} />
+            <img src={prefexAdvisor} alt="prefexAdvisor prefex solution" aria-label="prefexdvisor prefex solution" width={400} height={300} />
         </div>
       </div>
     </section>
