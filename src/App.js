@@ -26,7 +26,7 @@ function App() {
     <>
       {/* Preloading fonts */}
       <Helmet>
-        <meta charSet="utf-8" />
+        <meta name="robots" content="index, follow"/>
         <meta name="description" content="Prefex Solution is a group of professional traders and financial advisors, well-versed in the alpha and omega of various assets in the International Financial Market." />
         <meta name="keywords" content="Prefex Solution, trading, financial advisors, international financial market, portfolio management" />
         <meta name="author" content="Prefex Solution" />

@@ -5,6 +5,12 @@ import BenefitOfAdvisor from "../../componets/BenefitOfAdvisor";
 const ExpertAdvisor = () => {
   return (
     <>
+     <Helmet>
+      <title>Expert Advisor - Prefex Solution</title>
+      <meta name="robots" content="index, follow"/>
+      <meta name="prefex solution Expert_advisor" content="Prefex Solution Expert_advisor" />
+      <meta name="keywords" content="prefex, Expert_advisor,advisor, solution, prefix, prefexsolution,trading, financial advisors, international market, Prefex Solution" />
+    </Helmet>
         <section className="expert-advisor">
           <div className="text-box">
             <h1 className="main-font">Expert Advisors at Prefex Solution</h1>

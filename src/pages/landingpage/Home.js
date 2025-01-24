@@ -11,6 +11,7 @@ const Home = () => {
     <>
     <Helmet>
       <title>Prefex Solution</title>
+      <meta name="robots" content="index, follow">
       <meta name="prefex solution" content="Prefex Solution." />
       <meta name="keywords" content="prefex, solution, prefix, prefexsolution,trading, financial advisors, international market, Prefex Solution" />
     </Helmet>

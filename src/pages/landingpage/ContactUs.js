@@ -4,6 +4,12 @@ import EnquiryForm from '../../componets/EnquiryForm'
 const ContactUs = () => {
   return (
     <>  
+     <Helmet>
+      <title>ContactUs - Prefex solution</title>
+      <meta name="robots" content="index, follow"/>
+      <meta name="prefex solution contact_us" content="Prefex_solution contact_us" />
+      <meta name="keywords" content="prefex_solution,contact_us, prefix, prefexsolution,trading, financial advisors, international market, Prefex Solution" />
+    </Helmet>
      <section className="contact-us">
           <div className="text-box">
             <h1 className="main-font">Contact US</h1>
