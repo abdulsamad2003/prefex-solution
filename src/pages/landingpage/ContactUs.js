@@ -1,6 +1,7 @@
 import React from 'react'
 import "./ContactUs.scss"
 import EnquiryForm from '../../componets/EnquiryForm'
+import { Helmet } from 'react-helmet'
 const ContactUs = () => {
   return (
     <>  

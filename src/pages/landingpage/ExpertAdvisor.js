@@ -2,6 +2,7 @@ import React from "react";
 import "./ExpertAdvisor.scss";
 import ColinQuote from "../../componets/ColinQuote";
 import BenefitOfAdvisor from "../../componets/BenefitOfAdvisor";
+import { Helmet } from "react-helmet";
 const ExpertAdvisor = () => {
   return (
     <>
