@@ -4,16 +4,22 @@ import { Link } from "react-router-dom";
 import Benefits from "../../componets/Benefits";
 import InvestmentRisk from "../../componets/InvestmentRisk";
 import { Helmet } from "react-helmet";
-
+import logo from "../../assets/prefexLogo.webp";
 const Home = () => {
   return (
     
     <>
     <Helmet>
-      <title>Prefex Solution</title>
+      <title>Prefex Solution - Professional Financial Advisors</title>
+      <meta name="description" content="Prefex Solution provides expert trading and financial advisory services in the international financial market. Contact us for reliable solutions."/>
+      <meta name="keywords" content="financial advisors, trading solutions, Prefex Solution, international market, trading experts, financial market services" />
+      <meta name="author" content="Prefex Solution" />
+      <meta property="og:title" content="Prefex Solution - Financial Advisors" />
+      <meta property="og:description" content="Prefex Solution provides expert trading and financial advisory services in the international financial market." />
+      <meta property="og:image" content={logo} />
+      <meta property="og:url" content="https://www.prefexsolution.com" />
+      <meta name="viewport" content="width=device-width, initial-scale=1" />
       <meta name="robots" content="index, follow"/>
-      <meta name="prefex solution" content="Prefex Solution." />
-      <meta name="keywords" content="prefex, solution, prefix, prefexsolution,trading, financial advisors, international market, Prefex Solution" />
     </Helmet>
       <section className="home main-font" aria-labelledby="main-heading">
         <div className="text-box">

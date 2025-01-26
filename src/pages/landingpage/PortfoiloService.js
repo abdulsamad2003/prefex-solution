@@ -6,10 +6,16 @@ function PortfoiloService() {
   return (
     <>
      <Helmet>
-      <title>Portfolio service - Prefex Solution</title>
-      <meta name="robots" content="index, follow"/>
-      <meta name="prefex solution portfolio_service" content="Prefex Solution portfolio_service" />
-      <meta name="keywords" content="prefex, portfolio_service, advisor, solution, prefix, prefexsolution,trading, financial advisors, international market, Prefex Solution" />
+     <title>Prefex Solution - Expert Financial Advisors</title>
+      <meta name="description" content="Explore expert financial advisory services with Prefex Solution. Our advisors provide tailored solutions for the international financial market. Contact us today!" />
+      <meta name="keywords" content="expert financial advisors, trading solutions, Prefex Solution, international financial market, professional advisors, financial market services, expert trading advisors" />
+      <meta name="author" content="Prefex Solution" />
+      <meta property="og:title" content="Prefex Solution - Expert Financial Advisors" />
+      <meta property="og:description" content="Discover expert financial advisory services at Prefex Solution. Get professional guidance for international trading and market solutions." />
+      <meta property="og:image" content={prefexAdvisor}/>
+      <meta property="og:url" content="https://www.prefexsolution.com/expert-advisor" />
+      <meta name="viewport" content="width=device-width, initial-scale=1" />
+      <meta name="robots" content="index, follow" />
     </Helmet>
     <section className="portfolio-service">
       <div className="heading main-font">

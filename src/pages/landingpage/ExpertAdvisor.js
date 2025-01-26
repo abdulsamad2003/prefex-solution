@@ -2,15 +2,22 @@ import React from "react";
 import "./ExpertAdvisor.scss";
 import ColinQuote from "../../componets/ColinQuote";
 import BenefitOfAdvisor from "../../componets/BenefitOfAdvisor";
+import ExpertAdvisorImage from "../../assets/prefex-advisor-4.webp"
 import { Helmet } from "react-helmet";
 const ExpertAdvisor = () => {
   return (
     <>
      <Helmet>
-      <title>Expert Advisor - Prefex Solution</title>
-      <meta name="robots" content="index, follow"/>
-      <meta name="prefex solution Expert_advisor" content="Prefex Solution Expert_advisor" />
-      <meta name="keywords" content="prefex, Expert_advisor,advisor, solution, prefix, prefexsolution,trading, financial advisors, international market, Prefex Solution" />
+     <title>Prefex Solution - Expert Financial Advisors</title>
+      <meta name="description" content="Explore expert financial advisory services with Prefex Solution. Our advisors provide tailored solutions for the international financial market. Contact us today!" />
+      <meta name="keywords" content="expert financial advisors, trading solutions, Prefex Solution, international financial market, professional advisors, financial market services, expert trading advisors" />
+      <meta name="author" content="Prefex Solution" />
+      <meta property="og:title" content="Prefex Solution - Expert Financial Advisors" />
+      <meta property="og:description" content="Discover expert financial advisory services at Prefex Solution. Get professional guidance for international trading and market solutions." />
+      <meta property="og:image" content={ExpertAdvisorImage} />
+      <meta property="og:url" content="https://www.prefexsolution.com/expert-advisor" />
+      <meta name="viewport" content="width=device-width, initial-scale=1" />
+      <meta name="robots" content="index, follow" />
     </Helmet>
         <section className="expert-advisor">
           <div className="text-box">
