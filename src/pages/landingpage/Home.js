@@ -5,6 +5,7 @@ import Benefits from "../../componets/Benefits";
 import InvestmentRisk from "../../componets/InvestmentRisk";
 import { Helmet } from "react-helmet";
 import logo from "../../assets/prefexLogo.webp";
+import Reviews from "../../componets/Reviews";
 const Home = () => {
   return (
     
@@ -44,6 +45,8 @@ const Home = () => {
       <Benefits />
 
       <InvestmentRisk />
+
+      <Reviews/>
     </>
   );
 };

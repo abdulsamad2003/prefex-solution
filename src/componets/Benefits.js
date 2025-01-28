@@ -35,8 +35,7 @@ function Benefits() {
                 the client's equity.
               </p>
               <p className="para para-font">
-                Risk Manag Risk Management and Money Management. ement and Money
-                Management.
+                  Risk Management and Money Management.
               </p>
             </div>
           </div>
