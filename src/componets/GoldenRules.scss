@@ -1,0 +1,28 @@
+.heading{
+    width: 100%;
+    padding: 8vh 2vw;
+    h1{
+        text-align: center;
+        font-size: clamp(1.5rem, 4vw , 2.5rem);
+    }
+}
+.golden-card-container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    height: 100%;
+    gap: 2vw;
+    padding: 0 10vh ;
+    margin: 3vh 0;
+  
+    @media screen and (max-width:768px) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    @media screen and (max-width:500px) {
+      row-gap: 4vh;
+  
+    }
+    @media screen and (max-width:400px) {
+      grid-template-columns: repeat(1, 1fr);
+      margin: 5vh 0 10vh 0;
+    }
+  }

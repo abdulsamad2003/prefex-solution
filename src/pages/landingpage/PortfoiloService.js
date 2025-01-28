@@ -2,6 +2,7 @@ import React from "react";
 import "./PortfolioService.scss";
 import prefexAdvisor from "../../assets/prefex-advisor-1.webp"
 import { Helmet } from "react-helmet";
+import GoldenRules from "../../componets/GoldenRules";
 function PortfoiloService() {
   return (
     <>
@@ -45,6 +46,7 @@ function PortfoiloService() {
         </div>
       </div>
     </section>
+    <GoldenRules/>
     </>
   );
 }
