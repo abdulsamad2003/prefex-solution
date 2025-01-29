@@ -51,7 +51,7 @@ const Footer = () => {
                 </li>
                 <li>
                     <span className="main-font">Phone no:</span>
-                    <Link className="para-font" to="tel:+91 9769793309">+91 9769793309</Link>
+                    <Link className="para-font" to="tel:+91 123456789">+91 123456789</Link>
                 </li>
                 <li className="hover">
                     <span className="main-font">Address</span>
