@@ -9,7 +9,7 @@ const AboutUs = () => {
         <p className='para-font'>Prefex Solution international market research providing firm in India operating under the Domain and brand name "prefexsolution.com". We Provide 
             high-quality research services to out clients, which helps our clients to make better decisions for themselves. We are one of the few firms in india which specialize in Intraday Trading 
             research providing service. Our aim to provide our clients the highest quality research 
-            so that the clients's trading experience is better with the analysis provided by us.</p>
+            so that the client's trading experience is better with the analysis provided by us.</p>
     </section>
   )
 }
