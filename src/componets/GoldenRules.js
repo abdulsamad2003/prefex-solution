@@ -17,21 +17,21 @@ const GoldenRules = () => {
         <h1 className="main-font">9 Golden Rules for Forex Trading in Stock Market</h1>
     </section>
        <section className="golden-card-container">
-      <GoldenRuleCard icon={rule1} heading="Choose The Right Stocks" />
+      <GoldenRuleCard icons={rule1} heading="Choose The Right Stocks" />
 
-      <GoldenRuleCard icon={rule2} heading="Take calculated risks" />
+      <GoldenRuleCard icons={rule2} heading="Take calculated risks" />
 
-      <GoldenRuleCard icon={rule3} heading="Do thorough research" />
+      <GoldenRuleCard icons={rule3} heading="Do thorough research" />
 
-      <GoldenRuleCard icon={rule4} heading="Take expert's help" />
-      <GoldenRuleCard icon={rule5} heading="Never be emotional" />
-      <GoldenRuleCard icon={rule6} heading="Redressal of grievance" />
+      <GoldenRuleCard icons={rule4} heading="Take expert's help" />
+      <GoldenRuleCard icons={rule5} heading="Never be emotional" />
+      <GoldenRuleCard icons={rule6} heading="Redressal of grievance" />
 
-      <GoldenRuleCard icon={rule7} heading="Use stop loss" />
+      <GoldenRuleCard icons={rule7} heading="Use stop loss" />
 
-      <GoldenRuleCard icon={rule8} heading="Don't be greedy" />
+      <GoldenRuleCard icons={rule8} heading="Don't be greedy" />
       <GoldenRuleCard
-        icon={rule9}
+        icons={rule9}
         heading="Never take decision based on rumors"
       />
     </section>
