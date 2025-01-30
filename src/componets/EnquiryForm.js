@@ -12,7 +12,6 @@ const EnquiryForm = () => {
   }, []);
 
   const [formStatus, setFormStatus] = useState(null);
-  Sharma
   async function handleSubmit(event) {
     event.preventDefault();
     const formData = new FormData(event.target);
