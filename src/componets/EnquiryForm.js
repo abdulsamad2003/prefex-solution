@@ -162,12 +162,10 @@ const EnquiryForm = () => {
       >
         <iframe
           style={{ width: isWindowBelow600 ? "100%" : "50%", height: isWindowBelow600 ? "50vh" : "60vh" }}
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8350.300020018478!2d74.37275104502272!3d18.82502731270111!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc32dc0efa412e9%3A0x17e0b68940e44c24!2sShirur%2C%20Maharashtra%20412210!5e1!3m2!1sen!2sin!4v1699446179747!5m2!1sen!2sin"
-          width="580"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3767.8049089651095!2d72.95204507436922!3d19.203721547952142!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7b9f5c38d909d%3A0xbd382394b6bff4f7!2sOmega%20Business%20Park!5e0!3m2!1sen!2sin!4v1738225496912!5m2!1sen!2sin"          width="580"
           height="439"
           title='map'
           loading="lazy"
-          referrerPolicy="no-referrer-when-downgrade"
         ></iframe>
         <div
           className="address"
@@ -181,11 +179,9 @@ const EnquiryForm = () => {
             <h3 className='main-font'>Address</h3>
           </span>
           <p className='para-font'>
-            Bandra Terminal
-            <br />
-            Dist – Mumbai 412211
-            <br />
-            Maharashtra - India
+             Omega Business Park, MIDC, Ambica Nagar, Wagle Industrial Estate, Thane,
+              <br />
+             Maharashtra 400604
           </p>
         </div>
       </section>
@@ -206,3 +202,4 @@ const EnquiryForm = () => {
 }
 
 export default EnquiryForm
+

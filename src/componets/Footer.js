@@ -51,12 +51,14 @@ const Footer = () => {
                 </li>
                 <li>
                     <span className="main-font">Phone no:</span>
-                    <Link className="para-font" to="tel:+91 123456789">+91 123456789</Link>
+                    <Link className="para-font" to="tel:+91 9167378538">+91 9167378538</Link>
                 </li>
                 <li className="hover">
                     <span className="main-font">Address</span>
                     <Link className="para-font">
-                        Mumbai India
+                        Omega Business Park, MIDC, 
+                        Ambica Nagar, Wagle Industrial Estate,Thane,
+                        Maharashtra 400604
                     </Link>
                 </li>
                 </ul>
