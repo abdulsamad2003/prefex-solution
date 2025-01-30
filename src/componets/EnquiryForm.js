@@ -12,7 +12,7 @@ const EnquiryForm = () => {
   }, []);
 
   const [formStatus, setFormStatus] = useState(null);
-  
+  Sharma
   async function handleSubmit(event) {
     event.preventDefault();
     const formData = new FormData(event.target);
@@ -78,22 +78,17 @@ const EnquiryForm = () => {
           <span className="email">
             <h1 className='main-font'>EMAIL</h1>
             <span className='para-font'>
-              <Link  to="mailto:" target="_blank">
-                    Support@prefexsolution.com
+              <Link  to="mailto:support@prefexsolution.com" target="_blank">
+                    support@prefexsolution.com
               </Link>
             </span>
           </span>
           <span className="phone-whatsapp">
             <h1 className='main-font'>PHONE/WHATSAPP</h1>
+  
             <span className='para-font'>
-              <Link>
-                +91 9673500999
-              </Link>
-            </span>
-
-            <span className='para-font'>
-              <Link to="tel:+91 7836098136">
-                +91 9673500999
+              <Link to="tel:+91 9167378538">
+                +91 9167378538
               </Link>
             </span>
           </span>

@@ -9,36 +9,50 @@ const reviews = [
         rating: 4.5,
         img: "https://res.cloudinary.com/diqqf3eq2/image/upload/v1586883409/person-2_np9x5l.jpg",
         text: "I was a beginner, and Prefex Solution made Forex trading so easy to understand. Their guidance is invaluable!"
-      },
+    },
     {
-    id: 2,
-    name: "Noah Martinez",
-    rating: 3.4,
-    img: "https://res.cloudinary.com/diqqf3eq2/image/upload/v1586883334/person-1_rfzshl.jpg",
-    text: "Thanks to Prefex Solution, I feel confident navigating the Forex market. Their personalized approach sets them apart."
-  },
-
-  {
-    id: 3,
-    name: "James Brown",
-    rating: 5,
-    img: "https://res.cloudinary.com/diqqf3eq2/image/upload/v1586883417/person-3_ipa0mj.jpg",
-    text: "The strategies provided by Prefex Solution have been game-changing. Their team is truly knowledgeable and supportive."
-  },
-  {
-    id: 4,
-    name: "Bill Anderson",
-    rating: 4,
-    img: "https://res.cloudinary.com/diqqf3eq2/image/upload/v1586883423/person-4_t9nxjt.jpg",
-    text: "Prefex Solution’s market insights are a game-changer. I’ve seen remarkable improvements in my trading performance."
-  },
-  {
-    id: 5,
-    name: "Riya Sharma",
-    rating: 3.5,
-    img: "https://cdn.pixabay.com/photo/2023/05/07/08/07/girl-7975892_1280.jpg",
-    text: "Prefex Solution is the best partner I could ask for in my trading journey. Their signals are accurate and actionable."
-  },
+      id: 2,
+      name: "Noah Martinez",
+      rating: 3.4,
+      img: "https://res.cloudinary.com/diqqf3eq2/image/upload/v1586883334/person-1_rfzshl.jpg",
+      text: "Thanks to Prefex Solution, I feel confident navigating the Forex market. Their personalized approach sets them apart."
+    },
+    {
+      id: 3,
+      name: "Bill Anderson",
+      rating: 4,
+      img: "https://res.cloudinary.com/diqqf3eq2/image/upload/v1586883423/person-4_t9nxjt.jpg",
+      text: "Prefex Solution’s market insights are a game-changer. I’ve seen remarkable improvements in my trading performance."
+    },
+    {
+      id: 4,
+      name: "Riya Sharma",
+      rating: 3.5,
+      img: "https://cdn.pixabay.com/photo/2023/05/07/08/07/girl-7975892_1280.jpg",
+      text: "Prefex Solution is the best partner I could ask for in my trading journey. Their signals are accurate and actionable."
+    },
+    {
+      id: 5,
+      name: "James Brown",
+      rating: 5,
+      img: "https://res.cloudinary.com/diqqf3eq2/image/upload/v1586883417/person-3_ipa0mj.jpg",
+      text: "The strategies provided by Prefex Solution have been game-changing. Their team is truly knowledgeable and supportive."
+    },
+    {
+      id: 6,
+      name: "Amit Verma",
+      rating: 4,
+      img: "https://cdn.pixabay.com/photo/2013/11/14/13/11/indian-210382_1280.jpg",
+      text: "Prefex Solution’s market insights have truly transformed my trading approach. Their analysis is highly reliable and effective."
+    },
+    {
+      id: 7,
+      name: "Rehan Malik",
+      rating: 3.5,
+      img: "https://cdn.pixabay.com/photo/2020/05/25/03/28/beard-5216825_1280.jpg",
+      text: "Prefex Solution has been a great support in my trading journey. Their strategies are insightful and practical."
+    }
+    
 ];
 
 const Reviews = () => {
