@@ -156,8 +156,7 @@ const EnquiryForm = () => {
       >
         <iframe
           style={{ width: isWindowBelow600 ? "100%" : "50%", height: isWindowBelow600 ? "50vh" : "60vh" }}
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3767.8049089651095!2d72.95204507436922!3d19.203721547952142!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7b9f5c38d909d%3A0xbd382394b6bff4f7!2sOmega%20Business%20Park!5e0!3m2!1sen!2sin!4v1738225496912!5m2!1sen!2sin"          width="580"
-          height="439"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3767.8049089651095!2d72.95204507436922!3d19.203721547952142!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7b9f5c38d909d%3A0xbd382394b6bff4f7!2sOmega%20Business%20Park!5e0!3m2!1sen!2sin!4v1738236027582!5m2!1sen!2sin"          height="439"
           title='map'
           loading="lazy"
         ></iframe>

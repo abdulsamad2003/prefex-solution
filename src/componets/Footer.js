@@ -19,10 +19,10 @@ const Footer = () => {
             <h1>Links</h1>
             <div className="links">
                 <ul className="para-font">
-                      <li><Link to="/">Home</Link></li>
-        <li><Link to="/portfolio-service">Portfolio Management Service</Link></li>
-        <li><Link to="/expert-advisor">Expert Advisor</Link></li>
-        <li><Link to="/contact-us">Contact Us</Link></li>
+                        <li><Link to="/">Home</Link></li>
+                        <li><Link to="/portfolio-service">Portfolio Management Service</Link></li>
+                        <li><Link to="/expert-advisor">Expert Advisor</Link></li>
+                        <li><Link to="/contact-us">Contact Us</Link></li>
                 </ul>
         
             </div>
