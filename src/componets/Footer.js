@@ -36,7 +36,7 @@ const Footer = () => {
                 <li>
                     <span className="main-font">Email</span>
                     <Link className="para-font" to="mailto:support@prefexsolution.com" target="_blank">support@prefexsolution.com</Link>
-                    <Link className="para-font" to="mailto:admin@prefexsolution.com" target="_blank">admin@prefexsolution.com</Link>
+                    <Link className="para-font" to="mailto:care@prefexsolution.com" target="_blank">care@prefexsolution.com</Link>
                 </li>
                 <li>
                     <span className="main-font">Phone no:</span>
