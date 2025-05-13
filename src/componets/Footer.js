@@ -38,10 +38,6 @@ const Footer = () => {
                     <Link className="para-font" to="mailto:support@prefexsolution.com" target="_blank">support@prefexsolution.com</Link>
                     <Link className="para-font" to="mailto:care@prefexsolution.com" target="_blank">care@prefexsolution.com</Link>
                 </li>
-                <li>
-                    <span className="main-font">Phone no:</span>
-                    <Link className="para-font" to="tel:+91 9167378538">+91 9167378538</Link>
-                </li>
                 <li className="hover">
                     <span className="main-font">Address</span>
                     <Link className="para-font">

@@ -82,15 +82,7 @@ const EnquiryForm = () => {
               </Link>
             </span>
           </span>
-          <span className="phone-whatsapp">
-            <h1 className='main-font'>PHONE/WHATSAPP</h1>
-  
-            <span className='para-font'>
-              <Link to="tel:+91 9167378538">
-                +91 9167378538
-              </Link>
-            </span>
-          </span>
+
         </div>
         <form
           onSubmit={handleSubmit} 
