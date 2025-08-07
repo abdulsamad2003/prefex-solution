@@ -1,78 +1,113 @@
-import React from "react";
-import "./Benefits.scss";
-import { MdAttachMoney } from "react-icons/md";
-import prefexTrader from "../assets/prefexTrader.webp";
-function Benefits() {
+import React from 'react'
+import "./Benefits.scss"
+import { MdTrendingUp, MdAnalytics } from 'react-icons/md'
+import { FaShieldAlt, FaChartLine, FaUsers, FaGlobe } from 'react-icons/fa'
+import { Helmet } from 'react-helmet'
+
+const Benefits = () => {
+  const benefits = [
+    {
+      id: 1,
+      icon: <FaShieldAlt />,
+      title: "Secure Trading Environment",
+      description: "Advanced security protocols and encryption ensure your trading activities are protected at all times.",
+      features: ["256-bit SSL encryption", "Two-factor authentication", "Real-time fraud monitoring", "Secure data centers"]
+    },
+    {
+      id: 2,
+      icon: <FaChartLine />,
+      title: "Advanced Analytics",
+      description: "Comprehensive market analysis tools and real-time data to make informed trading decisions.",
+      features: ["Real-time market data", "Technical indicators", "Risk assessment tools", "Performance tracking"]
+    },
+    {
+      id: 3,
+      icon: <FaUsers />,
+      title: "Expert Support Team",
+      description: "Dedicated team of financial experts available 24/7 to assist you with any trading needs.",
+      features: ["24/7 customer support", "Expert financial advisors", "Personal account managers", "Training resources"]
+    },
+    {
+      id: 4,
+      icon: <MdTrendingUp />,
+      title: "Proven Track Record",
+      description: "Years of successful trading experience with consistent returns for our clients.",
+      features: ["High success rate", "Transparent performance", "Client testimonials", "Award-winning service"]
+    },
+    {
+      id: 5,
+      icon: <MdAnalytics />,
+      title: "Comprehensive Reporting",
+      description: "Detailed reports and insights to track your portfolio performance and trading activities.",
+      features: ["Monthly performance reports", "Tax documentation", "Portfolio analysis", "Custom reporting"]
+    },
+    {
+      id: 6,
+      icon: <FaGlobe />,
+      title: "Global Market Access",
+      description: "Access to international markets and diverse investment opportunities worldwide.",
+      features: ["Multiple markets", "Currency trading", "International stocks", "Global diversification"]
+    }
+  ];
+
   return (
-    <section id="why-us" className="why-us">
-      <div className="left-img">
-        <img src={prefexTrader} width="100%" height="100%" alt="prefex solution prefex advisor" />
-      </div>
+    <>
+      <Helmet>
+        <title>Benefits - Prefex Solution | Expert Financial Services</title>
+        <meta name="description" content="Discover the benefits of choosing Prefex Solution for your financial needs. Secure trading, expert support, and proven results." />
+        <meta name="keywords" content="Prefex Solution benefits, secure trading, expert financial services, trading advantages, financial benefits" />
+        <meta name="author" content="Prefex Solution" />
+        <meta property="og:title" content="Benefits - Prefex Solution" />
+        <meta property="og:description" content="Discover the benefits of choosing Prefex Solution for your financial needs." />
+        <meta property="og:type" content="website" />
+        <meta name="robots" content="index, follow" />
+      </Helmet>
 
-      <div className="why-us-content">
-        <div className="heading">
-          <span className="small-heading para-font">
-            <MdAttachMoney color="blue" size={"30px"} />
-            <h1 className="main-font">Benefits For You:</h1>
-          </span>
-          <p className="para-font">
-            Enjoy different experiences in every place you visit.
-          </p>
-          <p className="para-font">
-            and discover new and affordable adventures of course.
-          </p>
-        </div>
-
-        <div className="choose-us-card">
-          <div className="card">
-            <div className="card-content">
-              <h1 className="h-one main-font">
-                Complete Security of Capital Preservation
-              </h1>
-              <p className="para para-font">
-                Your investment is safe with our professional traders as they
-                have been doing this day in and day out, securely multiplying
-                the client's equity.
-              </p>
-              <p className="para para-font">
-                  Risk Management and Money Management.
-              </p>
+      <section className="benefits" id="benefits">
+        <div className="benefits-bg-pattern"></div>
+        
+        {/* Animated Background Shapes */}
+        <div className="bg-shape-1"></div>
+        <div className="bg-shape-2"></div>
+        <div className="bg-shape-3"></div>
+        <div className="bg-shape-4"></div>
+        <div className="bg-shape-5"></div>
+        <div className="bg-shape-6"></div>
+        
+        <div className="benefits-container">
+          <div className="benefits-header">
+            <h1 className="main-font">Why Choose Prefex Solution?</h1>
+            <p className="para-font">
+              Experience the advantages of working with a trusted financial partner committed to your success.
+            </p>
+            <div className="benefits-accent-lines">
+              <div className="accent-line left"></div>
+              <div className="accent-line right"></div>
             </div>
           </div>
 
-          <div className="card">
-            <div className="card-content">
-              <h1 className="h-one main-font">
-                Long Term Solution For a Secure Future
-              </h1>
-              <p className="para para-font">
-                To be par with the markets, our professionals constantly keep
-                themselves updated with the changes and technological know how.
-              </p>
-            </div>
-          </div>
-
-          <div className="card">
-            <div className="card-content">
-              <h1 className="h-one main-font">
-                Advanced Tools, Research and Development
-              </h1>
-              <p className="para para-font">
-                We believe in providing hassle free and convenient tour booking
-                options to our guests. Tour booking can be done through our
-                different portals which include our Toll Free
-              </p>
-              <p className="para para-font">
-                Research and Analysis on Fundamental and Socio Political factors
-                to ensure the capital investment is always working in the right
-                direction.
-              </p>
-            </div>
+          <div className="benefits-grid">
+            {benefits.map((benefit) => (
+              <div className="benefit-card" key={benefit.id}>
+                <div className="benefit-icon">
+                  {benefit.icon}
+                </div>
+                <div className="benefit-content">
+                  <h2 className="main-font">{benefit.title}</h2>
+                  <p className="para-font">{benefit.description}</p>
+                  <ul className="benefit-features">
+                    {benefit.features.map((feature, index) => (
+                      <li key={index} className="para-font">{feature}</li>
+                    ))}
+                  </ul>
+                </div>
+              </div>
+            ))}
           </div>
         </div>
-      </div>
-    </section>
-  );
+      </section>
+    </>
+  )
 }
 
-export default Benefits;
+export default Benefits

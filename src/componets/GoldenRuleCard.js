@@ -1,19 +1,23 @@
 import React from 'react'
 import "./GoldenRuleCard.scss"
 import icon from "../assets/prefex-rule-1.jpg"
-const GoldenRuleCard = ({ icons={icon}, heading="happy"}) => {
+
+const GoldenRuleCard = ({ icons={icon}, heading="Rule", description="Description"}) => {
   return (
-    <main className="golden-card">
-      <span className="icon">
+    <div className="golden-card">
+      <div className="card-icon">
         <img
-            src={icons} // Use the icon passed as a prop
-            alt="Rules icon" // Always include alt text for accessibility
-            width={80}
-            height={80}
-          />
-      </span>
-    <h1>{heading}</h1> {/* Render the heading passed as a prop */}
-  </main>
+          src={icons}
+          alt={`${heading} icon`}
+          width={80}
+          height={80}
+        />
+      </div>
+      <div className="card-content">
+        <h3 className="main-font">{heading}</h3>
+        <p className="para-font">{description}</p>
+      </div>
+    </div>
   )
 }
 

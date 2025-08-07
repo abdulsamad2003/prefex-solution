@@ -1,17 +1,14 @@
-import React, { useEffect, useState } from 'react'
+import React, { useState } from 'react'
 import "./EnquiryForm.scss"
-import { Link } from 'react-router-dom';
 
 const EnquiryForm = () => {
-  const [isWindowBelow600, setIsWindowBelow600] = useState(window.innerWidth < 600);
-
-  useEffect(() => {
-    const handleResize = () => setIsWindowBelow600(window.innerWidth < 600);
-    window.addEventListener("resize", handleResize);
-    return () => window.removeEventListener("resize", handleResize);
-  }, []);
-
   const [formStatus, setFormStatus] = useState(null);
+  const [fullName, setFullName] = useState("");
+
+  const handleInputChange = (event) => {
+    setFullName(event.target.value);
+  };
+
   async function handleSubmit(event) {
     event.preventDefault();
     const formData = new FormData(event.target);
@@ -39,15 +36,16 @@ const EnquiryForm = () => {
       const result = await emailResponse.json();
   
       if (emailResponse.ok && result.success) {
-        setFormStatus('success'); // Set success status
-        event.target.reset(); // Reset the form fields
+        setFormStatus('success');
+        event.target.reset();
+        setFullName("");
       } else {
         console.error(result);
-        setFormStatus('error'); // Set error status
+        setFormStatus('error');
       }
     } catch (error) {
       console.error("Error submitting form:", error.message);
-      setFormStatus('error'); // Handle network or fetch errors
+      setFormStatus('error');
     }
   
     // Automatically clear the success/error/loading message after 10 seconds
@@ -55,134 +53,105 @@ const EnquiryForm = () => {
       setFormStatus(null);
     }, 10000);
   }
-  
-  // this is for changing form web3 form received name in gmail
-  const [fullName, setFullName] = useState("");
-  const handleInputChange = (event) => {
-    setFullName(event.target.value); // Update the fullName state
-  };
+
   return (
-    <>
-      <section className='enquiry-page'
-        style={{
-          display: "flex",
-          flexDirection: isWindowBelow600 ? "column" : "row",
-        }}
-      >
-        <div className="content">
-          <p className='content-small-heading para-font'>
-            Interested in Prefex Solution? <br /> We are just a call away! <br />
-            Please reach out to us at:
-          </p>
-          <span className="email">
-            <h1 className='main-font'>EMAIL</h1>
-            <span className='para-font'>
-              <Link  to="mailto:support@prefexsolution.com" target="_blank">
-                    support@prefexsolution.com
-              </Link>
-            </span>
-          </span>
-
+    <div className="enquiry-form">
+      <form onSubmit={handleSubmit} className="form-container">
+        <div className="form-header">
+          <h3 className="main-font">Get In Touch</h3>
+          <p className="para-font">We would love to hear from you. Send us a message and we'll respond as soon as possible.</p>
         </div>
-        <form
-          onSubmit={handleSubmit} 
-          className="input"
-          style={{
-            width: isWindowBelow600 ? "100%" : "50%",
-            padding: isWindowBelow600 ? "5% 0 0 10%" : "0",
-          }}
-        >
-          <div className="input-content">
-            <h2 className="main-font"> Get in touch</h2>
-            <p className='para-font'>We would love to hear from you.</p>
-          </div>
-          <div className="full-input">
+
+        <div className="form-fields">
+          <div className="form-group">
+            <label htmlFor="fullName" className="para-font">Full Name *</label>
+            <input
+              type="text"
+              id="fullName"
+              name="fullName"
+              placeholder="Enter your full name"
+              value={fullName}
+              onChange={handleInputChange}
+              required
+            />
             <input type="hidden" name="from_name" value={fullName}/>
-            <label htmlFor="First">Name</label>
-            <input  type="text"
-                id="fullName"
-                name="fullName"
-                placeholder="Enter a name"
-                value={fullName}
-                onChange={handleInputChange}
-                required/>
           </div>
-          <div className="full-input">
-            <label htmlFor="email">EMAIL</label>
-            <input type="email"
-                id="email"
-                name="email"
-                placeholder="Enter an email"
-                required/>
+
+          <div className="form-group">
+            <label htmlFor="email" className="para-font">Email Address *</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Enter your email address"
+              required
+            />
           </div>
-          <div className="full-input">
-            <label htmlFor="phone number">Phone number</label>
-            <input  type="tel"
-          id="phone"
-          name="phone"
-          placeholder="Enter Your 10-digit mobile no."
-          pattern="[0-9]{10}"
-          title="Phone number must be exactly 10 digits"
-          required />
+
+          <div className="form-group">
+            <label htmlFor="phone" className="para-font">Phone Number *</label>
+            <input
+              type="tel"
+              id="phone"
+              name="phone"
+              placeholder="Enter your 10-digit mobile number"
+              pattern="[0-9]{10}"
+              title="Phone number must be exactly 10 digits"
+              required
+            />
           </div>
-          <div className="full-input">
-            <label htmlFor="message">Message</label>
-            <textarea name="message" id="message" cols="65" rows="5"></textarea>
+
+          <div className="form-group">
+            <label htmlFor="subject" className="para-font">Subject</label>
+            <select id="subject" name="subject" className="para-font">
+              <option value="">Select a subject</option>
+              <option value="General Inquiry">General Inquiry</option>
+              <option value="Trading Services">Trading Services</option>
+              <option value="Expert Advisor">Expert Advisor</option>
+              <option value="Portfolio Management">Portfolio Management</option>
+              <option value="Support">Support</option>
+              <option value="Other">Other</option>
+            </select>
           </div>
-          <div className="full-input">
-          <button className="blue-btn" type="submit">
-            Send Message
-          </button>
-          {formStatus === 'loading' && <p className="loading-message">Form is submitting please wait...!!!</p>}
-          {formStatus === 'success' && <p className="success-message">Form submitted successfully!</p>}
-          {formStatus === 'error' && <p className="error-message">There was an error submitting the form. Please try again later.</p>}
+
+          <div className="form-group full-width">
+            <label htmlFor="message" className="para-font">Message *</label>
+            <textarea
+              id="message"
+              name="message"
+              placeholder="Tell us about your requirements..."
+              rows="5"
+              required
+            ></textarea>
           </div>
-        </form>
-      </section>
-      <section
-        className="map-area"
-        style={{
-          display: "flex",
-          flexDirection: isWindowBelow600 ? "column" : "row",
-        }}
-      >
-        <iframe
-          style={{ width: isWindowBelow600 ? "100%" : "50%", height: isWindowBelow600 ? "50vh" : "60vh" }}
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3767.8049089651095!2d72.95204507436922!3d19.203721547952142!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7b9f5c38d909d%3A0xbd382394b6bff4f7!2sOmega%20Business%20Park!5e0!3m2!1sen!2sin!4v1738236027582!5m2!1sen!2sin"          height="439"
-          title='map'
-          loading="lazy"
-        ></iframe>
-        <div
-          className="address"
-          style={{
-            width: isWindowBelow600 ? "fit-content" : "50%",
-            padding: isWindowBelow600 ? "2vh 0" : "0",
-          }}
-        >
-          <h2 className='main-font'>OUR OFFICE</h2>
-          <span>
-            <h3 className='main-font'>Address</h3>
-          </span>
-          <p className='para-font'>
-             Omega Business Park, MIDC, Ambica Nagar, Wagle Industrial Estate, Thane,
-              <br />
-             Maharashtra 400604
-          </p>
+
+          <div className="form-group full-width">
+            <button type="submit" className="submit-btn main-font">
+              {formStatus === 'loading' ? 'Sending...' : 'Send Message'}
+            </button>
+          </div>
+
+          {/* Status Messages */}
+          {formStatus === 'loading' && (
+            <div className="status-message loading">
+              <p className="para-font">Sending your message, please wait...</p>
+            </div>
+          )}
+          
+          {formStatus === 'success' && (
+            <div className="status-message success">
+              <p className="para-font">Thank you! Your message has been sent successfully. We'll get back to you soon.</p>
+            </div>
+          )}
+          
+          {formStatus === 'error' && (
+            <div className="status-message error">
+              <p className="para-font">Sorry, there was an error sending your message. Please try again or contact us directly.</p>
+            </div>
+          )}
         </div>
-      </section>
-
-      <style jsx>{`
-        .success-message {
-          color: green;
-          margin-top: 10px;
-        }
-
-        .error-message {
-          color: red;
-          margin-top: 10px;
-        }
-      `}</style>
-    </>
+      </form>
+    </div>
   )
 }
 
