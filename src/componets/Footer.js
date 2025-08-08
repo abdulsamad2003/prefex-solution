@@ -2,7 +2,7 @@
 import React from "react";
 import "./Footer.scss";
 import { Link } from "react-router-dom";
-import { FaFacebookF, FaTwitter, FaLinkedinIn, FaInstagram, FaYoutube, FaPhone, FaEnvelope, FaMapMarkerAlt, FaClock } from "react-icons/fa";
+import { FaFacebookF, FaTwitter, FaLinkedinIn, FaInstagram, FaYoutube, FaEnvelope, FaMapMarkerAlt } from "react-icons/fa";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -78,7 +78,7 @@ const Footer = () => {
               </div>
             </div>
 
-            <div className="contact-item">
+            {/* <div className="contact-item">
               <div className="contact-icon">
                 <FaPhone />
               </div>
@@ -87,7 +87,7 @@ const Footer = () => {
                 <a href="tel:+919876543210" className="para-font">+91 98765 43210</a> <br />
                 <a href="tel:+919876543211" className="para-font">+91 98765 43211</a>
               </div>
-            </div>
+            </div> */}
 
             <div className="contact-item">
               <div className="contact-icon">
@@ -103,7 +103,7 @@ const Footer = () => {
               </div>
             </div>
 
-            <div className="contact-item">
+            {/* <div className="contact-item">
               <div className="contact-icon">
                 <FaClock />
               </div>
@@ -115,7 +115,7 @@ const Footer = () => {
                   Sunday: Closed
                 </p>
               </div>
-            </div>
+            </div> */}
           </div>
         </div>
 

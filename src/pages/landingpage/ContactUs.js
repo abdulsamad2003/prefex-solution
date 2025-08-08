@@ -3,7 +3,7 @@ import "./ContactUs.scss"
 import EnquiryForm from '../../componets/EnquiryForm'
 import contactUs from "../../assets/prefexLogo.webp"
 import { Helmet } from 'react-helmet'
-import { FaPhone, FaEnvelope, FaMapMarkerAlt, FaClock } from 'react-icons/fa'
+import {  FaEnvelope, FaMapMarkerAlt, FaClock } from 'react-icons/fa'
 
 const ContactUs = () => {
   return (
@@ -102,7 +102,7 @@ const ContactUs = () => {
               </div>
               
               <div className="contact-methods">
-                <div className="contact-method">
+                {/* <div className="contact-method">
                   <div className="method-icon">
                     <FaPhone />
                   </div>
@@ -113,7 +113,7 @@ const ContactUs = () => {
                     <span className="method-note">24/7 Support Available</span><br />
                     <span className="method-note">Mon - Fri, 9:00 AM - 6:00 PM IST</span>
                   </div>
-                </div>
+                </div> */}
 
                 <div className="contact-method">
                   <div className="method-icon">

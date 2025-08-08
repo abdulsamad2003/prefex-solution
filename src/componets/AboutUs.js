@@ -90,7 +90,7 @@ const AboutUs = () => {
             <p className="stat-label">Years Experience</p>
           </div>
           <div className="stat-card">
-            <h3 className="stat-number">500+</h3>
+            <h3 className="stat-number">2000+</h3>
             <p className="stat-label">Happy Clients</p>
           </div>
           <div className="stat-card">
